@@ -28,7 +28,7 @@ void Update_Launchpad_LED2(colors color);
 
 // Timer Driver Code
 // TODO: Check the timer for completion.
-bool Timer0_Expired(unsigned timer_id);
+bool Timer0_Expired(void);
 
 int main(void)
 {
@@ -106,7 +106,7 @@ void Update_Launchpad_LED2(colors color)
     // - Use an if-else or switch-case structure containing DriverLib functions.
 }
 
-bool Timer0_Expired(unsigned timer_id)
+bool Timer0_Expired()
 {
     // TODO: Check Timer0 for completion.
     // - A function that accomplishes this task is in the lecture slides. You will need to explain why it works.
