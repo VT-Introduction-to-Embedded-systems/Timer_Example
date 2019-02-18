@@ -16,7 +16,7 @@ void Init_GPIO(void);
 // - Write the function to use the parameters, then insert the parameters into the function call.
 // - These are not all of the parameters that the Timer init functions use. You could add more.
 // - With that said, the HAL coding model should still seek to hide the microcontroller-specific details.
-void Init_Timer0(int count, bool oneShot);
+void Init_Timer0(unsigned count, bool oneShot);
 
 // GPIO Driver Code
 char Get_Status_Launchpad_Button1(void);
@@ -74,7 +74,7 @@ void Init_GPIO()
     GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN2);   // LaunchPad LED2 (Blue)
 }
 
-void Init_Timer0(int count, bool oneShot)
+void Init_Timer0(unsigned count, bool oneShot)
 {
     // TODO: Configure Timer0 in 32-bit Periodic Mode. Choose a pre-scale value in conjunction with your count value.
     // TODO: Set the initial count value using the function parameter.
